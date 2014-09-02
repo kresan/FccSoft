@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gdml xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+    <!--
+      +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      ++++   Linear collider detector description GDML in C++  ++++
+      ++++   DD4hep Detector description generator.            ++++
+      ++++                                                     ++++
+      ++++   Parser: TinyXML DOM mini-parser                   ++++
+      ++++                                                     ++++
+      ++++                              M.Frank CERN/LHCb      ++++
+      +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  -->
+    <define>
+        <position name="VXD_layer0_sens_0_0x7fc843b6c0c0_pos" x="0.050000" y="0.000000" z="0.000000" unit="mm" />
+        <position name="VXD_layer0_supp_1_0x7fc843b6c2d0_pos" x="-0.025000" y="0.000000" z="0.000000" unit="mm" />
+        <position name="VXD_layer1_sens_0_0x7fc843b752a0_pos" x="0.050000" y="0.000000" z="0.000000" unit="mm" />
+        <position name="VXD_layer1_supp_1_0x7fc843b75470_pos" x="-0.025000" y="0.000000" z="0.000000" unit="mm" />
+        <position name="VXD_layer2_sens_0_0x7fc843b7e400_pos" x="0.050000" y="0.000000" z="0.000000" unit="mm" />
+        <position name="VXD_layer2_supp_1_0x7fc843b7e5d0_pos" x="-0.025000" y="0.000000" z="0.000000" unit="mm" />
+        <position name="VXD_layer3_sens_0_0x7fc843b88260_pos" x="0.050000" y="0.000000" z="0.000000" unit="mm" />
+        <position name="VXD_layer3_supp_1_0x7fc843b88430_pos" x="-0.025000" y="0.000000" z="0.000000" unit="mm" />
+        <position name="VXD_layer4_sens_0_0x7fc843b91fc0_pos" x="0.050000" y="0.000000" z="0.000000" unit="mm" />
+        <position name="VXD_layer4_supp_1_0x7fc843b92190_pos" x="-0.025000" y="0.000000" z="0.000000" unit="mm" />
+        <position name="VXD_layer5_sens_0_0x7fc843ba0a90_pos" x="0.050000" y="0.000000" z="0.000000" unit="mm" />
+        <position name="VXD_layer5_supp_1_0x7fc843ba0c60_pos" x="-0.025000" y="0.000000" z="0.000000" unit="mm" />
+        <position name="VXD_layer0_ladder_0_0x7fc843b6c5a0_pos" x="-1.874870" y="-15.925000" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_0_0x7fc843b6c5a0_rot" x="-0.000000" y="-0.000000" z="1.570796" unit="rad" />
+        <position name="VXD_layer0_ladder_1_0x7fc843b6c7e0_pos" x="-1.874870" y="-15.925000" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_1_0x7fc843b6c7e0_rot" x="-0.000000" y="-0.000000" z="1.570796" unit="rad" />
+        <position name="VXD_layer0_ladder_2_0x7fc843b6cd60_pos" x="7.843679" y="-13.985616" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_2_0x7fc843b6cd60_rot" x="0.000000" y="-0.000000" z="0.942478" unit="rad" />
+        <position name="VXD_layer0_ladder_3_0x7fc843b6d3a0_pos" x="7.843679" y="-13.985616" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_3_0x7fc843b6d3a0_rot" x="0.000000" y="-0.000000" z="0.942478" unit="rad" />
+        <position name="VXD_layer0_ladder_4_0x7fc843b6d9e0_pos" x="14.566208" y="-6.704203" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_4_0x7fc843b6d9e0_rot" x="0.000000" y="-0.000000" z="0.314159" unit="rad" />
+        <position name="VXD_layer0_ladder_5_0x7fc843b6e020_pos" x="14.566208" y="-6.704203" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_5_0x7fc843b6e020_rot" x="0.000000" y="-0.000000" z="0.314159" unit="rad" />
+        <position name="VXD_layer0_ladder_6_0x7fc843b6e660_pos" x="15.724942" y="3.137988" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_6_0x7fc843b6e660_rot" x="0.000000" y="-0.000000" z="-0.314159" unit="rad" />
+        <position name="VXD_layer0_ladder_7_0x7fc843b6eca0_pos" x="15.724942" y="3.137988" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_7_0x7fc843b6eca0_rot" x="0.000000" y="-0.000000" z="-0.314159" unit="rad" />
+        <position name="VXD_layer0_ladder_8_0x7fc843b6f2e0_pos" x="10.877282" y="11.781575" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_8_0x7fc843b6f2e0_rot" x="0.000000" y="-0.000000" z="-0.942478" unit="rad" />
+        <position name="VXD_layer0_ladder_9_0x7fc843b6f920_pos" x="10.877282" y="11.781575" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_9_0x7fc843b6f920_rot" x="0.000000" y="-0.000000" z="-0.942478" unit="rad" />
+        <position name="VXD_layer0_ladder_10_0x7fc843b6ff60_pos" x="1.874870" y="15.925000" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_10_0x7fc843b6ff60_rot" x="0.000000" y="-0.000000" z="-1.570796" unit="rad" />
+        <position name="VXD_layer0_ladder_11_0x7fc843b705a0_pos" x="1.874870" y="15.925000" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_11_0x7fc843b705a0_rot" x="0.000000" y="-0.000000" z="-1.570796" unit="rad" />
+        <position name="VXD_layer0_ladder_12_0x7fc843b70be0_pos" x="-7.843679" y="13.985616" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_12_0x7fc843b70be0_rot" x="0.000000" y="-0.000000" z="-2.199115" unit="rad" />
+        <position name="VXD_layer0_ladder_13_0x7fc843b71220_pos" x="-7.843679" y="13.985616" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_13_0x7fc843b71220_rot" x="0.000000" y="-0.000000" z="-2.199115" unit="rad" />
+        <position name="VXD_layer0_ladder_14_0x7fc843b71860_pos" x="-14.566208" y="6.704203" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_14_0x7fc843b71860_rot" x="0.000000" y="-0.000000" z="-2.827433" unit="rad" />
+        <position name="VXD_layer0_ladder_15_0x7fc843b71ea0_pos" x="-14.566208" y="6.704203" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_15_0x7fc843b71ea0_rot" x="0.000000" y="-0.000000" z="-2.827433" unit="rad" />
+        <position name="VXD_layer0_ladder_16_0x7fc843b724e0_pos" x="-15.724942" y="-3.137988" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_16_0x7fc843b724e0_rot" x="-0.000000" y="-0.000000" z="2.827433" unit="rad" />
+        <position name="VXD_layer0_ladder_17_0x7fc843b72ba0_pos" x="-15.724942" y="-3.137988" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_17_0x7fc843b72ba0_rot" x="-0.000000" y="-0.000000" z="2.827433" unit="rad" />
+        <position name="VXD_layer0_ladder_18_0x7fc843b731e0_pos" x="-10.877282" y="-11.781575" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_18_0x7fc843b731e0_rot" x="-0.000000" y="-0.000000" z="2.199115" unit="rad" />
+        <position name="VXD_layer0_ladder_19_0x7fc843b73820_pos" x="-10.877282" y="-11.781575" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer0_ladder_19_0x7fc843b73820_rot" x="-0.000000" y="-0.000000" z="2.199115" unit="rad" />
+        <position name="VXD_layer1_ladder_0_0x7fc843b75700_pos" x="-1.874870" y="-17.975000" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_0_0x7fc843b75700_rot" x="-0.000000" y="-0.000000" z="1.570796" unit="rad" />
+        <position name="VXD_layer1_ladder_1_0x7fc843b75980_pos" x="-1.874870" y="-17.975000" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_1_0x7fc843b75980_rot" x="-0.000000" y="-0.000000" z="1.570796" unit="rad" />
+        <position name="VXD_layer1_ladder_2_0x7fc843b75ec0_pos" x="9.048638" y="-15.644101" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_2_0x7fc843b75ec0_rot" x="0.000000" y="-0.000000" z="0.942478" unit="rad" />
+        <position name="VXD_layer1_ladder_3_0x7fc843b76500_pos" x="9.048638" y="-15.644101" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_3_0x7fc843b76500_rot" x="0.000000" y="-0.000000" z="0.942478" unit="rad" />
+        <position name="VXD_layer1_ladder_4_0x7fc843b76b40_pos" x="16.515874" y="-7.337688" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_4_0x7fc843b76b40_rot" x="0.000000" y="-0.000000" z="0.314159" unit="rad" />
+        <position name="VXD_layer1_ladder_5_0x7fc843b77180_pos" x="16.515874" y="-7.337688" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_5_0x7fc843b77180_rot" x="0.000000" y="-0.000000" z="0.314159" unit="rad" />
+        <position name="VXD_layer1_ladder_6_0x7fc843b777c0_pos" x="17.674608" y="3.771473" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_6_0x7fc843b777c0_rot" x="0.000000" y="-0.000000" z="-0.314159" unit="rad" />
+        <position name="VXD_layer1_ladder_7_0x7fc843b77e00_pos" x="17.674608" y="3.771473" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_7_0x7fc843b77e00_rot" x="0.000000" y="-0.000000" z="-0.314159" unit="rad" />
+        <position name="VXD_layer1_ladder_8_0x7fc843b78440_pos" x="12.082241" y="13.440060" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_8_0x7fc843b78440_rot" x="0.000000" y="-0.000000" z="-0.942478" unit="rad" />
+        <position name="VXD_layer1_ladder_9_0x7fc843b78a80_pos" x="12.082241" y="13.440060" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_9_0x7fc843b78a80_rot" x="0.000000" y="-0.000000" z="-0.942478" unit="rad" />
+        <position name="VXD_layer1_ladder_10_0x7fc843b790c0_pos" x="1.874870" y="17.975000" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_10_0x7fc843b790c0_rot" x="0.000000" y="-0.000000" z="-1.570796" unit="rad" />
+        <position name="VXD_layer1_ladder_11_0x7fc843b79700_pos" x="1.874870" y="17.975000" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_11_0x7fc843b79700_rot" x="0.000000" y="-0.000000" z="-1.570796" unit="rad" />
+        <position name="VXD_layer1_ladder_12_0x7fc843b79d40_pos" x="-9.048638" y="15.644101" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_12_0x7fc843b79d40_rot" x="0.000000" y="-0.000000" z="-2.199115" unit="rad" />
+        <position name="VXD_layer1_ladder_13_0x7fc843b7a380_pos" x="-9.048638" y="15.644101" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_13_0x7fc843b7a380_rot" x="0.000000" y="-0.000000" z="-2.199115" unit="rad" />
+        <position name="VXD_layer1_ladder_14_0x7fc843b7a9c0_pos" x="-16.515874" y="7.337688" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_14_0x7fc843b7a9c0_rot" x="0.000000" y="-0.000000" z="-2.827433" unit="rad" />
+        <position name="VXD_layer1_ladder_15_0x7fc843b7b000_pos" x="-16.515874" y="7.337688" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_15_0x7fc843b7b000_rot" x="0.000000" y="-0.000000" z="-2.827433" unit="rad" />
+        <position name="VXD_layer1_ladder_16_0x7fc843b7b640_pos" x="-17.674608" y="-3.771473" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_16_0x7fc843b7b640_rot" x="-0.000000" y="-0.000000" z="2.827433" unit="rad" />
+        <position name="VXD_layer1_ladder_17_0x7fc843b7bd00_pos" x="-17.674608" y="-3.771473" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_17_0x7fc843b7bd00_rot" x="-0.000000" y="-0.000000" z="2.827433" unit="rad" />
+        <position name="VXD_layer1_ladder_18_0x7fc843b7c340_pos" x="-12.082241" y="-13.440060" z="32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_18_0x7fc843b7c340_rot" x="-0.000000" y="-0.000000" z="2.199115" unit="rad" />
+        <position name="VXD_layer1_ladder_19_0x7fc843b7c980_pos" x="-12.082241" y="-13.440060" z="-32.500000" unit="mm" />
+        <rotation name="VXD_layer1_ladder_19_0x7fc843b7c980_rot" x="-0.000000" y="-0.000000" z="2.199115" unit="rad" />
+        <position name="VXD_layer2_ladder_0_0x7fc843b7e960_pos" x="-1.837941" y="-36.925000" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_0_0x7fc843b7e960_rot" x="-0.000000" y="-0.000000" z="1.570796" unit="rad" />
+        <position name="VXD_layer2_ladder_1_0x7fc843b7eb60_pos" x="-1.837941" y="-36.925000" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_1_0x7fc843b7eb60_rot" x="-0.000000" y="-0.000000" z="1.570796" unit="rad" />
+        <position name="VXD_layer2_ladder_2_0x7fc843b7f0a0_pos" x="18.416988" y="-32.056952" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_2_0x7fc843b7f0a0_rot" x="0.000000" y="-0.000000" z="0.999598" unit="rad" />
+        <position name="VXD_layer2_ladder_3_0x7fc843b7f6e0_pos" x="18.416988" y="-32.056952" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_3_0x7fc843b7f6e0_rot" x="0.000000" y="-0.000000" z="0.999598" unit="rad" />
+        <position name="VXD_layer2_ladder_4_0x7fc843b7fd20_pos" x="32.824653" y="-17.011049" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_4_0x7fc843b7fd20_rot" x="0.000000" y="-0.000000" z="0.428399" unit="rad" />
+        <position name="VXD_layer2_ladder_5_0x7fc843b80360_pos" x="32.824653" y="-17.011049" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_5_0x7fc843b80360_rot" x="0.000000" y="-0.000000" z="0.428399" unit="rad" />
+        <position name="VXD_layer2_ladder_6_0x7fc843b809a0_pos" x="36.810723" y="3.435742" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_6_0x7fc843b809a0_rot" x="0.000000" y="-0.000000" z="-0.142800" unit="rad" />
+        <position name="VXD_layer2_ladder_7_0x7fc843b80fe0_pos" x="36.810723" y="3.435742" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_7_0x7fc843b80fe0_rot" x="0.000000" y="-0.000000" z="-0.142800" unit="rad" />
+        <position name="VXD_layer2_ladder_8_0x7fc843b81620_pos" x="29.109648" y="22.791710" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_8_0x7fc843b81620_rot" x="0.000000" y="-0.000000" z="-0.713998" unit="rad" />
+        <position name="VXD_layer2_ladder_9_0x7fc843b81c60_pos" x="29.109648" y="22.791710" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_9_0x7fc843b81c60_rot" x="0.000000" y="-0.000000" z="-0.713998" unit="rad" />
+        <position name="VXD_layer2_ladder_10_0x7fc843b822a0_pos" x="12.166466" y="34.911470" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_10_0x7fc843b822a0_rot" x="0.000000" y="-0.000000" z="-1.285197" unit="rad" />
+        <position name="VXD_layer2_ladder_11_0x7fc843b828e0_pos" x="12.166466" y="34.911470" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_11_0x7fc843b828e0_rot" x="0.000000" y="-0.000000" z="-1.285197" unit="rad" />
+        <position name="VXD_layer2_ladder_12_0x7fc843b82f20_pos" x="-8.639484" y="35.947086" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_12_0x7fc843b82f20_rot" x="0.000000" y="-0.000000" z="-1.856396" unit="rad" />
+        <position name="VXD_layer2_ladder_13_0x7fc843b83560_pos" x="-8.639484" y="35.947086" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_13_0x7fc843b83560_rot" x="0.000000" y="-0.000000" z="-1.856396" unit="rad" />
+        <position name="VXD_layer2_ladder_14_0x7fc843b83ba0_pos" x="-26.702458" y="25.569755" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_14_0x7fc843b83ba0_rot" x="0.000000" y="-0.000000" z="-2.427594" unit="rad" />
+        <position name="VXD_layer2_ladder_15_0x7fc843b841e0_pos" x="-26.702458" y="25.569755" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_15_0x7fc843b841e0_rot" x="0.000000" y="-0.000000" z="-2.427594" unit="rad" />
+        <position name="VXD_layer2_ladder_16_0x7fc843b84820_pos" x="-36.287591" y="7.074208" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_16_0x7fc843b84820_rot" x="0.000000" y="-0.000000" z="-2.998793" unit="rad" />
+        <position name="VXD_layer2_ladder_17_0x7fc843b84ee0_pos" x="-36.287591" y="7.074208" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_17_0x7fc843b84ee0_rot" x="0.000000" y="-0.000000" z="-2.998793" unit="rad" />
+        <position name="VXD_layer2_ladder_18_0x7fc843b85520_pos" x="-34.351670" y="-13.667350" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_18_0x7fc843b85520_rot" x="-0.000000" y="-0.000000" z="2.713194" unit="rad" />
+        <position name="VXD_layer2_ladder_19_0x7fc843b85b60_pos" x="-34.351670" y="-13.667350" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_19_0x7fc843b85b60_rot" x="-0.000000" y="-0.000000" z="2.713194" unit="rad" />
+        <position name="VXD_layer2_ladder_20_0x7fc843b861a0_pos" x="-21.509336" y="-30.069621" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_20_0x7fc843b861a0_rot" x="-0.000000" y="-0.000000" z="2.141995" unit="rad" />
+        <position name="VXD_layer2_ladder_21_0x7fc843b867e0_pos" x="-21.509336" y="-30.069621" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer2_ladder_21_0x7fc843b867e0_rot" x="-0.000000" y="-0.000000" z="2.141995" unit="rad" />
+        <position name="VXD_layer3_ladder_0_0x7fc843b88680_pos" x="-1.837941" y="-38.975000" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_0_0x7fc843b88680_rot" x="-0.000000" y="-0.000000" z="1.570796" unit="rad" />
+        <position name="VXD_layer3_ladder_1_0x7fc843b888c0_pos" x="-1.837941" y="-38.975000" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_1_0x7fc843b888c0_rot" x="-0.000000" y="-0.000000" z="1.570796" unit="rad" />
+        <position name="VXD_layer3_ladder_2_0x7fc843b88e00_pos" x="19.525302" y="-33.781522" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_2_0x7fc843b88e00_rot" x="0.000000" y="-0.000000" z="0.999598" unit="rad" />
+        <position name="VXD_layer3_ladder_3_0x7fc843b89440_pos" x="19.525302" y="-33.781522" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_3_0x7fc843b89440_rot" x="0.000000" y="-0.000000" z="0.999598" unit="rad" />
+        <position name="VXD_layer3_ladder_4_0x7fc843b89a80_pos" x="34.689399" y="-17.862650" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_4_0x7fc843b89a80_rot" x="0.000000" y="-0.000000" z="0.428399" unit="rad" />
+        <position name="VXD_layer3_ladder_5_0x7fc843b8a0c0_pos" x="34.689399" y="-17.862650" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_5_0x7fc843b8a0c0_rot" x="0.000000" y="-0.000000" z="0.428399" unit="rad" />
+        <position name="VXD_layer3_ladder_6_0x7fc843b8a700_pos" x="38.839857" y="3.727488" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_6_0x7fc843b8a700_rot" x="0.000000" y="-0.000000" z="-0.142800" unit="rad" />
+        <position name="VXD_layer3_ladder_7_0x7fc843b8ad40_pos" x="38.839857" y="3.727488" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_7_0x7fc843b8ad40_rot" x="0.000000" y="-0.000000" z="-0.142800" unit="rad" />
+        <position name="VXD_layer3_ladder_8_0x7fc843b8b380_pos" x="30.658935" y="24.134174" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_8_0x7fc843b8b380_rot" x="0.000000" y="-0.000000" z="-0.713998" unit="rad" />
+        <position name="VXD_layer3_ladder_9_0x7fc843b8b9c0_pos" x="30.658935" y="24.134174" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_9_0x7fc843b8b9c0_rot" x="0.000000" y="-0.000000" z="-0.713998" unit="rad" />
+        <position name="VXD_layer3_ladder_10_0x7fc843b8c000_pos" x="12.744017" y="36.878431" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_10_0x7fc843b8c000_rot" x="0.000000" y="-0.000000" z="-1.285197" unit="rad" />
+        <position name="VXD_layer3_ladder_11_0x7fc843b8c640_pos" x="12.744017" y="36.878431" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_11_0x7fc843b8c640_rot" x="0.000000" y="-0.000000" z="-1.285197" unit="rad" />
+        <position name="VXD_layer3_ladder_12_0x7fc843b8cc80_pos" x="-9.217035" y="37.914046" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_12_0x7fc843b8cc80_rot" x="0.000000" y="-0.000000" z="-1.856396" unit="rad" />
+        <position name="VXD_layer3_ladder_13_0x7fc843b8d2c0_pos" x="-9.217035" y="37.914046" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_13_0x7fc843b8d2c0_rot" x="0.000000" y="-0.000000" z="-1.856396" unit="rad" />
+        <position name="VXD_layer3_ladder_14_0x7fc843b8d900_pos" x="-28.251745" y="26.912220" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_14_0x7fc843b8d900_rot" x="0.000000" y="-0.000000" z="-2.427594" unit="rad" />
+        <position name="VXD_layer3_ladder_15_0x7fc843b8df40_pos" x="-28.251745" y="26.912220" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_15_0x7fc843b8df40_rot" x="0.000000" y="-0.000000" z="-2.427594" unit="rad" />
+        <position name="VXD_layer3_ladder_16_0x7fc843b8e580_pos" x="-38.316724" y="7.365954" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_16_0x7fc843b8e580_rot" x="0.000000" y="-0.000000" z="-2.998793" unit="rad" />
+        <position name="VXD_layer3_ladder_17_0x7fc843b8ec40_pos" x="-38.316724" y="7.365954" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_17_0x7fc843b8ec40_rot" x="0.000000" y="-0.000000" z="-2.998793" unit="rad" />
+        <position name="VXD_layer3_ladder_18_0x7fc843b8f280_pos" x="-36.216415" y="-14.518951" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_18_0x7fc843b8f280_rot" x="-0.000000" y="-0.000000" z="2.713194" unit="rad" />
+        <position name="VXD_layer3_ladder_19_0x7fc843b8f8c0_pos" x="-36.216415" y="-14.518951" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_19_0x7fc843b8f8c0_rot" x="-0.000000" y="-0.000000" z="2.713194" unit="rad" />
+        <position name="VXD_layer3_ladder_20_0x7fc843b8ff00_pos" x="-22.617650" y="-31.794191" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_20_0x7fc843b8ff00_rot" x="-0.000000" y="-0.000000" z="2.141995" unit="rad" />
+        <position name="VXD_layer3_ladder_21_0x7fc843b90540_pos" x="-22.617650" y="-31.794191" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer3_ladder_21_0x7fc843b90540_rot" x="-0.000000" y="-0.000000" z="2.141995" unit="rad" />
+        <position name="VXD_layer4_ladder_0_0x7fc843b92660_pos" x="-2.636744" y="-57.925000" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_0_0x7fc843b92660_rot" x="-0.000000" y="-0.000000" z="1.570796" unit="rad" />
+        <position name="VXD_layer4_ladder_1_0x7fc843b92820_pos" x="-2.636744" y="-57.925000" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_1_0x7fc843b92820_rot" x="-0.000000" y="-0.000000" z="1.570796" unit="rad" />
+        <position name="VXD_layer4_ladder_2_0x7fc843b92d60_pos" x="18.466233" y="-54.965956" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_2_0x7fc843b92d60_rot" x="0.000000" y="-0.000000" z="1.201197" unit="rad" />
+        <position name="VXD_layer4_ladder_3_0x7fc843b933a0_pos" x="18.466233" y="-54.965956" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_3_0x7fc843b933a0_rot" x="0.000000" y="-0.000000" z="1.201197" unit="rad" />
+        <position name="VXD_layer4_ladder_4_0x7fc843b939e0_pos" x="37.075243" y="-44.583455" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_4_0x7fc843b939e0_rot" x="0.000000" y="-0.000000" z="0.831598" unit="rad" />
+        <position name="VXD_layer4_ladder_5_0x7fc843b94020_pos" x="37.075243" y="-44.583455" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_5_0x7fc843b94020_rot" x="0.000000" y="-0.000000" z="0.831598" unit="rad" />
+        <position name="VXD_layer4_ladder_6_0x7fc843b94660_pos" x="50.677036" y="-28.179711" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_6_0x7fc843b94660_rot" x="0.000000" y="-0.000000" z="0.461999" unit="rad" />
+        <position name="VXD_layer4_ladder_7_0x7fc843b94ca0_pos" x="50.677036" y="-28.179711" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_7_0x7fc843b94ca0_rot" x="0.000000" y="-0.000000" z="0.461999" unit="rad" />
+        <position name="VXD_layer4_ladder_8_0x7fc843b952e0_pos" x="57.434614" y="-7.970141" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_8_0x7fc843b952e0_rot" x="0.000000" y="-0.000000" z="0.092400" unit="rad" />
+        <position name="VXD_layer4_ladder_9_0x7fc843b95920_pos" x="57.434614" y="-7.970141" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_9_0x7fc843b95920_rot" x="0.000000" y="-0.000000" z="0.092400" unit="rad" />
+        <position name="VXD_layer4_ladder_10_0x7fc843b95f60_pos" x="56.435330" y="13.315840" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_10_0x7fc843b95f60_rot" x="0.000000" y="-0.000000" z="-0.277199" unit="rad" />
+        <position name="VXD_layer4_ladder_11_0x7fc843b965a0_pos" x="56.435330" y="13.315840" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_11_0x7fc843b965a0_rot" x="0.000000" y="-0.000000" z="-0.277199" unit="rad" />
+        <position name="VXD_layer4_ladder_12_0x7fc843b96be0_pos" x="47.814141" y="32.803444" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_12_0x7fc843b96be0_rot" x="0.000000" y="-0.000000" z="-0.646798" unit="rad" />
+        <position name="VXD_layer4_ladder_13_0x7fc843b97220_pos" x="47.814141" y="32.803444" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_13_0x7fc843b97220_rot" x="0.000000" y="-0.000000" z="-0.646798" unit="rad" />
+        <position name="VXD_layer4_ladder_14_0x7fc843b97860_pos" x="32.735388" y="47.860761" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_14_0x7fc843b97860_rot" x="0.000000" y="-0.000000" z="-1.016398" unit="rad" />
+        <position name="VXD_layer4_ladder_15_0x7fc843b97ea0_pos" x="32.735388" y="47.860761" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_15_0x7fc843b97ea0_rot" x="0.000000" y="-0.000000" z="-1.016398" unit="rad" />
+        <position name="VXD_layer4_ladder_16_0x7fc843b984e0_pos" x="13.235540" y="56.454216" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_16_0x7fc843b984e0_rot" x="0.000000" y="-0.000000" z="-1.385997" unit="rad" />
+        <position name="VXD_layer4_ladder_17_0x7fc843b98ba0_pos" x="13.235540" y="56.454216" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_17_0x7fc843b98ba0_rot" x="0.000000" y="-0.000000" z="-1.385997" unit="rad" />
+        <position name="VXD_layer4_ladder_18_0x7fc843b991e0_pos" x="-8.051842" y="57.423217" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_18_0x7fc843b991e0_rot" x="0.000000" y="-0.000000" z="-1.755596" unit="rad" />
+        <position name="VXD_layer4_ladder_19_0x7fc843b99820_pos" x="-8.051842" y="57.423217" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_19_0x7fc843b99820_rot" x="0.000000" y="-0.000000" z="-1.755596" unit="rad" />
+        <position name="VXD_layer4_ladder_20_0x7fc843b99e60_pos" x="-28.251778" y="50.636895" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_20_0x7fc843b99e60_rot" x="0.000000" y="-0.000000" z="-2.125195" unit="rad" />
+        <position name="VXD_layer4_ladder_21_0x7fc843b9a4a0_pos" x="-28.251778" y="50.636895" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_21_0x7fc843b9a4a0_rot" x="0.000000" y="-0.000000" z="-2.125195" unit="rad" />
+        <position name="VXD_layer4_ladder_22_0x7fc843b9aae0_pos" x="-44.636154" y="37.011779" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_22_0x7fc843b9aae0_rot" x="0.000000" y="-0.000000" z="-2.494794" unit="rad" />
+        <position name="VXD_layer4_ladder_23_0x7fc843b9b120_pos" x="-44.636154" y="37.011779" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_23_0x7fc843b9b120_rot" x="0.000000" y="-0.000000" z="-2.494794" unit="rad" />
+        <position name="VXD_layer4_ladder_24_0x7fc843b9b760_pos" x="-54.992171" y="18.388017" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_24_0x7fc843b9b760_rot" x="0.000000" y="-0.000000" z="-2.864393" unit="rad" />
+        <position name="VXD_layer4_ladder_25_0x7fc843b9bda0_pos" x="-54.992171" y="18.388017" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_25_0x7fc843b9bda0_rot" x="0.000000" y="-0.000000" z="-2.864393" unit="rad" />
+        <position name="VXD_layer4_ladder_26_0x7fc843b9c3e0_pos" x="-57.921190" y="-2.719148" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_26_0x7fc843b9c3e0_rot" x="-0.000000" y="-0.000000" z="3.049193" unit="rad" />
+        <position name="VXD_layer4_ladder_27_0x7fc843b9ca20_pos" x="-57.921190" y="-2.719148" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_27_0x7fc843b9ca20_rot" x="-0.000000" y="-0.000000" z="3.049193" unit="rad" />
+        <position name="VXD_layer4_ladder_28_0x7fc843b9d060_pos" x="-53.027632" y="-23.459077" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_28_0x7fc843b9d060_rot" x="-0.000000" y="-0.000000" z="2.679594" unit="rad" />
+        <position name="VXD_layer4_ladder_29_0x7fc843b9d6a0_pos" x="-53.027632" y="-23.459077" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_29_0x7fc843b9d6a0_rot" x="-0.000000" y="-0.000000" z="2.679594" unit="rad" />
+        <position name="VXD_layer4_ladder_30_0x7fc843b9dce0_pos" x="-40.972398" y="-41.030728" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_30_0x7fc843b9dce0_rot" x="-0.000000" y="-0.000000" z="2.309995" unit="rad" />
+        <position name="VXD_layer4_ladder_31_0x7fc843b9e320_pos" x="-40.972398" y="-41.030728" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_31_0x7fc843b9e320_rot" x="-0.000000" y="-0.000000" z="2.309995" unit="rad" />
+        <position name="VXD_layer4_ladder_32_0x7fc843b9e960_pos" x="-23.383614" y="-53.060952" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_32_0x7fc843b9e960_rot" x="-0.000000" y="-0.000000" z="1.940395" unit="rad" />
+        <position name="VXD_layer4_ladder_33_0x7fc843b9f090_pos" x="-23.383614" y="-53.060952" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer4_ladder_33_0x7fc843b9f090_rot" x="-0.000000" y="-0.000000" z="1.940395" unit="rad" />
+        <position name="VXD_layer5_ladder_0_0x7fc843ba0eb0_pos" x="-2.636744" y="-59.975000" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_0_0x7fc843ba0eb0_rot" x="-0.000000" y="-0.000000" z="1.570796" unit="rad" />
+        <position name="VXD_layer5_ladder_1_0x7fc843ba10f0_pos" x="-2.636744" y="-59.975000" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_1_0x7fc843ba10f0_rot" x="-0.000000" y="-0.000000" z="1.570796" unit="rad" />
+        <position name="VXD_layer5_ladder_2_0x7fc843ba1630_pos" x="19.206778" y="-56.877524" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_2_0x7fc843ba1630_rot" x="0.000000" y="-0.000000" z="1.201197" unit="rad" />
+        <position name="VXD_layer5_ladder_3_0x7fc843ba1c70_pos" x="19.206778" y="-56.877524" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_3_0x7fc843ba1c70_rot" x="0.000000" y="-0.000000" z="1.201197" unit="rad" />
+        <position name="VXD_layer5_ladder_4_0x7fc843ba22b0_pos" x="38.456319" y="-46.098423" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_4_0x7fc843ba22b0_rot" x="0.000000" y="-0.000000" z="0.831598" unit="rad" />
+        <position name="VXD_layer5_ladder_5_0x7fc843ba28f0_pos" x="38.456319" y="-46.098423" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_5_0x7fc843ba28f0_rot" x="0.000000" y="-0.000000" z="0.831598" unit="rad" />
+        <position name="VXD_layer5_ladder_6_0x7fc843ba2f30_pos" x="52.512120" y="-29.093475" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_6_0x7fc843ba2f30_rot" x="0.000000" y="-0.000000" z="0.461999" unit="rad" />
+        <position name="VXD_layer5_ladder_7_0x7fc843ba3570_pos" x="52.512120" y="-29.093475" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_7_0x7fc843ba3570_rot" x="0.000000" y="-0.000000" z="0.461999" unit="rad" />
+        <position name="VXD_layer5_ladder_8_0x7fc843ba3bb0_pos" x="59.475869" y="-8.159291" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_8_0x7fc843ba3bb0_rot" x="0.000000" y="-0.000000" z="0.092400" unit="rad" />
+        <position name="VXD_layer5_ladder_9_0x7fc843ba41f0_pos" x="59.475869" y="-8.159291" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_9_0x7fc843ba41f0_rot" x="0.000000" y="-0.000000" z="0.092400" unit="rad" />
+        <position name="VXD_layer5_ladder_10_0x7fc843ba4830_pos" x="58.407072" y="13.876849" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_10_0x7fc843ba4830_rot" x="0.000000" y="-0.000000" z="-0.277199" unit="rad" />
+        <position name="VXD_layer5_ladder_11_0x7fc843ba4e70_pos" x="58.407072" y="13.876849" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_11_0x7fc843ba4e70_rot" x="0.000000" y="-0.000000" z="-0.277199" unit="rad" />
+        <position name="VXD_layer5_ladder_12_0x7fc843ba54b0_pos" x="49.450077" y="34.038845" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_12_0x7fc843ba54b0_rot" x="0.000000" y="-0.000000" z="-0.646798" unit="rad" />
+        <position name="VXD_layer5_ladder_13_0x7fc843ba5af0_pos" x="49.450077" y="34.038845" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_13_0x7fc843ba5af0_rot" x="0.000000" y="-0.000000" z="-0.646798" unit="rad" />
+        <position name="VXD_layer5_ladder_14_0x7fc843ba6130_pos" x="33.814574" y="49.603706" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_14_0x7fc843ba6130_rot" x="0.000000" y="-0.000000" z="-1.016398" unit="rad" />
+        <position name="VXD_layer5_ladder_15_0x7fc843ba6770_pos" x="33.814574" y="49.603706" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_15_0x7fc843ba6770_rot" x="0.000000" y="-0.000000" z="-1.016398" unit="rad" />
+        <position name="VXD_layer5_ladder_16_0x7fc843ba6db0_pos" x="13.612226" y="58.469311" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_16_0x7fc843ba6db0_rot" x="0.000000" y="-0.000000" z="-1.385997" unit="rad" />
+        <position name="VXD_layer5_ladder_17_0x7fc843ba7470_pos" x="13.612226" y="58.469311" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_17_0x7fc843ba7470_rot" x="0.000000" y="-0.000000" z="-1.385997" unit="rad" />
+        <position name="VXD_layer5_ladder_18_0x7fc843ba7ab0_pos" x="-8.428529" y="59.438312" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_18_0x7fc843ba7ab0_rot" x="0.000000" y="-0.000000" z="-1.755596" unit="rad" />
+        <position name="VXD_layer5_ladder_19_0x7fc843ba80f0_pos" x="-8.428529" y="59.438312" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_19_0x7fc843ba80f0_rot" x="0.000000" y="-0.000000" z="-1.755596" unit="rad" />
+        <position name="VXD_layer5_ladder_20_0x7fc843ba8730_pos" x="-29.330964" y="52.379840" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_20_0x7fc843ba8730_rot" x="0.000000" y="-0.000000" z="-2.125195" unit="rad" />
+        <position name="VXD_layer5_ladder_21_0x7fc843ba8d70_pos" x="-29.330964" y="52.379840" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_21_0x7fc843ba8d70_rot" x="0.000000" y="-0.000000" z="-2.125195" unit="rad" />
+        <position name="VXD_layer5_ladder_22_0x7fc843ba93b0_pos" x="-46.272090" y="38.247180" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_22_0x7fc843ba93b0_rot" x="0.000000" y="-0.000000" z="-2.494794" unit="rad" />
+        <position name="VXD_layer5_ladder_23_0x7fc843ba99f0_pos" x="-46.272090" y="38.247180" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_23_0x7fc843ba99f0_rot" x="0.000000" y="-0.000000" z="-2.494794" unit="rad" />
+        <position name="VXD_layer5_ladder_24_0x7fc843baa030_pos" x="-56.963914" y="18.949026" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_24_0x7fc843baa030_rot" x="0.000000" y="-0.000000" z="-2.864393" unit="rad" />
+        <position name="VXD_layer5_ladder_25_0x7fc843baa670_pos" x="-56.963914" y="18.949026" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_25_0x7fc843baa670_rot" x="0.000000" y="-0.000000" z="-2.864393" unit="rad" />
+        <position name="VXD_layer5_ladder_26_0x7fc843baacb0_pos" x="-59.962445" y="-2.908298" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_26_0x7fc843baacb0_rot" x="-0.000000" y="-0.000000" z="3.049193" unit="rad" />
+        <position name="VXD_layer5_ladder_27_0x7fc843bab2f0_pos" x="-59.962445" y="-2.908298" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_27_0x7fc843bab2f0_rot" x="-0.000000" y="-0.000000" z="3.049193" unit="rad" />
+        <position name="VXD_layer5_ladder_28_0x7fc843bab930_pos" x="-54.862717" y="-24.372841" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_28_0x7fc843bab930_rot" x="-0.000000" y="-0.000000" z="2.679594" unit="rad" />
+        <position name="VXD_layer5_ladder_29_0x7fc843babf70_pos" x="-54.862717" y="-24.372841" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_29_0x7fc843babf70_rot" x="-0.000000" y="-0.000000" z="2.679594" unit="rad" />
+        <position name="VXD_layer5_ladder_30_0x7fc843bac5b0_pos" x="-42.353474" y="-42.545697" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_30_0x7fc843bac5b0_rot" x="-0.000000" y="-0.000000" z="2.309995" unit="rad" />
+        <position name="VXD_layer5_ladder_31_0x7fc843bacbf0_pos" x="-42.353474" y="-42.545697" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_31_0x7fc843bacbf0_rot" x="-0.000000" y="-0.000000" z="2.309995" unit="rad" />
+        <position name="VXD_layer5_ladder_32_0x7fc843bad230_pos" x="-24.124160" y="-54.972520" z="62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_32_0x7fc843bad230_rot" x="-0.000000" y="-0.000000" z="1.940395" unit="rad" />
+        <position name="VXD_layer5_ladder_33_0x7fc843bad960_pos" x="-24.124160" y="-54.972520" z="-62.500000" unit="mm" />
+        <rotation name="VXD_layer5_ladder_33_0x7fc843bad960_rot" x="-0.000000" y="-0.000000" z="1.940395" unit="rad" />
+        <rotation name="identity_rot" x="0" y="0" z="0" unit="rad" />
+        <position name="identity_pos" x="0" y="0" z="0" unit="mm" />
+    </define>
+    <materials>
+        <material name="dummy" Z="0.000000">
+            <D value="0.000000" unit="g/cm3" type="density" />
+            <atom type="A" unit="g/mol" value="0.000000" />
+        </material>
+        <element name="H" formula="H" Z="1">
+            <atom type="A" unit="g/mol" value="1.007940" />
+        </element>
+        <material name="Vacuum">
+            <D value="0.000000" unit="g/cm3" type="density" />
+            <fraction n="1.000000" ref="H" />
+        </material>
+        <element name="SI" formula="SI" Z="14">
+            <atom type="A" unit="g/mol" value="28.085500" />
+        </element>
+        <material name="Silicon">
+            <D value="2.330000" unit="g/cm3" type="density" />
+            <fraction n="1.000000" ref="SI" />
+        </material>
+        <element name="C" formula="C" Z="6">
+            <atom type="A" unit="g/mol" value="12.010700" />
+        </element>
+        <material name="Carbon">
+            <D value="2.000000" unit="g/cm3" type="density" />
+            <fraction n="1.000000" ref="C" />
+        </material>
+    </materials>
+    <solids>
+        <box name="VXD_layer0_ladder_shape" x="0.150000" y="11.000000" z="65.000000" lunit="mm" />
+        <box name="VXD_layer0_sens_shape" x="0.050000" y="11.000000" z="65.000000" lunit="mm" />
+        <box name="VXD_layer0_supp_shape" x="0.100000" y="11.000000" z="65.000000" lunit="mm" />
+        <box name="VXD_layer1_ladder_shape" x="0.150000" y="11.000000" z="65.000000" lunit="mm" />
+        <box name="VXD_layer1_sens_shape" x="0.050000" y="11.000000" z="65.000000" lunit="mm" />
+        <box name="VXD_layer1_supp_shape" x="0.100000" y="11.000000" z="65.000000" lunit="mm" />
+        <box name="VXD_layer2_ladder_shape" x="0.150000" y="22.000000" z="125.000000" lunit="mm" />
+        <box name="VXD_layer2_sens_shape" x="0.050000" y="22.000000" z="125.000000" lunit="mm" />
+        <box name="VXD_layer2_supp_shape" x="0.100000" y="22.000000" z="125.000000" lunit="mm" />
+        <box name="VXD_layer3_ladder_shape" x="0.150000" y="22.000000" z="125.000000" lunit="mm" />
+        <box name="VXD_layer3_sens_shape" x="0.050000" y="22.000000" z="125.000000" lunit="mm" />
+        <box name="VXD_layer3_supp_shape" x="0.100000" y="22.000000" z="125.000000" lunit="mm" />
+        <box name="VXD_layer4_ladder_shape" x="0.150000" y="22.000000" z="125.000000" lunit="mm" />
+        <box name="VXD_layer4_sens_shape" x="0.050000" y="22.000000" z="125.000000" lunit="mm" />
+        <box name="VXD_layer4_supp_shape" x="0.100000" y="22.000000" z="125.000000" lunit="mm" />
+        <box name="VXD_layer5_ladder_shape" x="0.150000" y="22.000000" z="125.000000" lunit="mm" />
+        <box name="VXD_layer5_sens_shape" x="0.050000" y="22.000000" z="125.000000" lunit="mm" />
+        <box name="VXD_layer5_supp_shape" x="0.100000" y="22.000000" z="125.000000" lunit="mm" />
+    </solids>
+    <structure>
+        <volume name="VXD_layer0_sens">
+            <materialref ref="Silicon" />
+            <solidref ref="VXD_layer0_sens_shape" />
+        </volume>
+        <volume name="VXD_layer0_supp">
+            <materialref ref="Carbon" />
+            <solidref ref="VXD_layer0_supp_shape" />
+        </volume>
+        <volume name="VXD_layer1_sens">
+            <materialref ref="Silicon" />
+            <solidref ref="VXD_layer1_sens_shape" />
+        </volume>
+        <volume name="VXD_layer1_supp">
+            <materialref ref="Carbon" />
+            <solidref ref="VXD_layer1_supp_shape" />
+        </volume>
+        <volume name="VXD_layer2_sens">
+            <materialref ref="Silicon" />
+            <solidref ref="VXD_layer2_sens_shape" />
+        </volume>
+        <volume name="VXD_layer2_supp">
+            <materialref ref="Carbon" />
+            <solidref ref="VXD_layer2_supp_shape" />
+        </volume>
+        <volume name="VXD_layer3_sens">
+            <materialref ref="Silicon" />
+            <solidref ref="VXD_layer3_sens_shape" />
+        </volume>
+        <volume name="VXD_layer3_supp">
+            <materialref ref="Carbon" />
+            <solidref ref="VXD_layer3_supp_shape" />
+        </volume>
+        <volume name="VXD_layer4_sens">
+            <materialref ref="Silicon" />
+            <solidref ref="VXD_layer4_sens_shape" />
+        </volume>
+        <volume name="VXD_layer4_supp">
+            <materialref ref="Carbon" />
+            <solidref ref="VXD_layer4_supp_shape" />
+        </volume>
+        <volume name="VXD_layer5_sens">
+            <materialref ref="Silicon" />
+            <solidref ref="VXD_layer5_sens_shape" />
+        </volume>
+        <volume name="VXD_layer5_supp">
+            <materialref ref="Carbon" />
+            <solidref ref="VXD_layer5_supp_shape" />
+        </volume>
+        <volume name="VXD_layer0_ladder">
+            <materialref ref="Vacuum" />
+            <solidref ref="VXD_layer0_ladder_shape" />
+            <physvol>
+                <volumeref ref="VXD_layer0_sens" />
+                <positionref ref="VXD_layer0_sens_0_0x7fc843b6c0c0_pos" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_supp" />
+                <positionref ref="VXD_layer0_supp_1_0x7fc843b6c2d0_pos" />
+            </physvol>
+        </volume>
+        <volume name="VXD_layer1_ladder">
+            <materialref ref="Vacuum" />
+            <solidref ref="VXD_layer1_ladder_shape" />
+            <physvol>
+                <volumeref ref="VXD_layer1_sens" />
+                <positionref ref="VXD_layer1_sens_0_0x7fc843b752a0_pos" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_supp" />
+                <positionref ref="VXD_layer1_supp_1_0x7fc843b75470_pos" />
+            </physvol>
+        </volume>
+        <volume name="VXD_layer2_ladder">
+            <materialref ref="Vacuum" />
+            <solidref ref="VXD_layer2_ladder_shape" />
+            <physvol>
+                <volumeref ref="VXD_layer2_sens" />
+                <positionref ref="VXD_layer2_sens_0_0x7fc843b7e400_pos" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_supp" />
+                <positionref ref="VXD_layer2_supp_1_0x7fc843b7e5d0_pos" />
+            </physvol>
+        </volume>
+        <volume name="VXD_layer3_ladder">
+            <materialref ref="Vacuum" />
+            <solidref ref="VXD_layer3_ladder_shape" />
+            <physvol>
+                <volumeref ref="VXD_layer3_sens" />
+                <positionref ref="VXD_layer3_sens_0_0x7fc843b88260_pos" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_supp" />
+                <positionref ref="VXD_layer3_supp_1_0x7fc843b88430_pos" />
+            </physvol>
+        </volume>
+        <volume name="VXD_layer4_ladder">
+            <materialref ref="Vacuum" />
+            <solidref ref="VXD_layer4_ladder_shape" />
+            <physvol>
+                <volumeref ref="VXD_layer4_sens" />
+                <positionref ref="VXD_layer4_sens_0_0x7fc843b91fc0_pos" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_supp" />
+                <positionref ref="VXD_layer4_supp_1_0x7fc843b92190_pos" />
+            </physvol>
+        </volume>
+        <volume name="VXD_layer5_ladder">
+            <materialref ref="Vacuum" />
+            <solidref ref="VXD_layer5_ladder_shape" />
+            <physvol>
+                <volumeref ref="VXD_layer5_sens" />
+                <positionref ref="VXD_layer5_sens_0_0x7fc843ba0a90_pos" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_supp" />
+                <positionref ref="VXD_layer5_supp_1_0x7fc843ba0c60_pos" />
+            </physvol>
+        </volume>
+        <assembly name="layer_assembly_0">
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_0_0x7fc843b6c5a0_pos" />
+                <rotationref ref="VXD_layer0_ladder_0_0x7fc843b6c5a0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_1_0x7fc843b6c7e0_pos" />
+                <rotationref ref="VXD_layer0_ladder_1_0x7fc843b6c7e0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_2_0x7fc843b6cd60_pos" />
+                <rotationref ref="VXD_layer0_ladder_2_0x7fc843b6cd60_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_3_0x7fc843b6d3a0_pos" />
+                <rotationref ref="VXD_layer0_ladder_3_0x7fc843b6d3a0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_4_0x7fc843b6d9e0_pos" />
+                <rotationref ref="VXD_layer0_ladder_4_0x7fc843b6d9e0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_5_0x7fc843b6e020_pos" />
+                <rotationref ref="VXD_layer0_ladder_5_0x7fc843b6e020_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_6_0x7fc843b6e660_pos" />
+                <rotationref ref="VXD_layer0_ladder_6_0x7fc843b6e660_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_7_0x7fc843b6eca0_pos" />
+                <rotationref ref="VXD_layer0_ladder_7_0x7fc843b6eca0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_8_0x7fc843b6f2e0_pos" />
+                <rotationref ref="VXD_layer0_ladder_8_0x7fc843b6f2e0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_9_0x7fc843b6f920_pos" />
+                <rotationref ref="VXD_layer0_ladder_9_0x7fc843b6f920_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_10_0x7fc843b6ff60_pos" />
+                <rotationref ref="VXD_layer0_ladder_10_0x7fc843b6ff60_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_11_0x7fc843b705a0_pos" />
+                <rotationref ref="VXD_layer0_ladder_11_0x7fc843b705a0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_12_0x7fc843b70be0_pos" />
+                <rotationref ref="VXD_layer0_ladder_12_0x7fc843b70be0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_13_0x7fc843b71220_pos" />
+                <rotationref ref="VXD_layer0_ladder_13_0x7fc843b71220_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_14_0x7fc843b71860_pos" />
+                <rotationref ref="VXD_layer0_ladder_14_0x7fc843b71860_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_15_0x7fc843b71ea0_pos" />
+                <rotationref ref="VXD_layer0_ladder_15_0x7fc843b71ea0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_16_0x7fc843b724e0_pos" />
+                <rotationref ref="VXD_layer0_ladder_16_0x7fc843b724e0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_17_0x7fc843b72ba0_pos" />
+                <rotationref ref="VXD_layer0_ladder_17_0x7fc843b72ba0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_18_0x7fc843b731e0_pos" />
+                <rotationref ref="VXD_layer0_ladder_18_0x7fc843b731e0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer0_ladder" />
+                <positionref ref="VXD_layer0_ladder_19_0x7fc843b73820_pos" />
+                <rotationref ref="VXD_layer0_ladder_19_0x7fc843b73820_rot" />
+            </physvol>
+        </assembly>
+        <assembly name="layer_assembly_1">
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_0_0x7fc843b75700_pos" />
+                <rotationref ref="VXD_layer1_ladder_0_0x7fc843b75700_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_1_0x7fc843b75980_pos" />
+                <rotationref ref="VXD_layer1_ladder_1_0x7fc843b75980_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_2_0x7fc843b75ec0_pos" />
+                <rotationref ref="VXD_layer1_ladder_2_0x7fc843b75ec0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_3_0x7fc843b76500_pos" />
+                <rotationref ref="VXD_layer1_ladder_3_0x7fc843b76500_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_4_0x7fc843b76b40_pos" />
+                <rotationref ref="VXD_layer1_ladder_4_0x7fc843b76b40_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_5_0x7fc843b77180_pos" />
+                <rotationref ref="VXD_layer1_ladder_5_0x7fc843b77180_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_6_0x7fc843b777c0_pos" />
+                <rotationref ref="VXD_layer1_ladder_6_0x7fc843b777c0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_7_0x7fc843b77e00_pos" />
+                <rotationref ref="VXD_layer1_ladder_7_0x7fc843b77e00_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_8_0x7fc843b78440_pos" />
+                <rotationref ref="VXD_layer1_ladder_8_0x7fc843b78440_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_9_0x7fc843b78a80_pos" />
+                <rotationref ref="VXD_layer1_ladder_9_0x7fc843b78a80_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_10_0x7fc843b790c0_pos" />
+                <rotationref ref="VXD_layer1_ladder_10_0x7fc843b790c0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_11_0x7fc843b79700_pos" />
+                <rotationref ref="VXD_layer1_ladder_11_0x7fc843b79700_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_12_0x7fc843b79d40_pos" />
+                <rotationref ref="VXD_layer1_ladder_12_0x7fc843b79d40_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_13_0x7fc843b7a380_pos" />
+                <rotationref ref="VXD_layer1_ladder_13_0x7fc843b7a380_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_14_0x7fc843b7a9c0_pos" />
+                <rotationref ref="VXD_layer1_ladder_14_0x7fc843b7a9c0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_15_0x7fc843b7b000_pos" />
+                <rotationref ref="VXD_layer1_ladder_15_0x7fc843b7b000_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_16_0x7fc843b7b640_pos" />
+                <rotationref ref="VXD_layer1_ladder_16_0x7fc843b7b640_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_17_0x7fc843b7bd00_pos" />
+                <rotationref ref="VXD_layer1_ladder_17_0x7fc843b7bd00_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_18_0x7fc843b7c340_pos" />
+                <rotationref ref="VXD_layer1_ladder_18_0x7fc843b7c340_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer1_ladder" />
+                <positionref ref="VXD_layer1_ladder_19_0x7fc843b7c980_pos" />
+                <rotationref ref="VXD_layer1_ladder_19_0x7fc843b7c980_rot" />
+            </physvol>
+        </assembly>
+        <assembly name="layer_assembly_2">
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_0_0x7fc843b7e960_pos" />
+                <rotationref ref="VXD_layer2_ladder_0_0x7fc843b7e960_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_1_0x7fc843b7eb60_pos" />
+                <rotationref ref="VXD_layer2_ladder_1_0x7fc843b7eb60_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_2_0x7fc843b7f0a0_pos" />
+                <rotationref ref="VXD_layer2_ladder_2_0x7fc843b7f0a0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_3_0x7fc843b7f6e0_pos" />
+                <rotationref ref="VXD_layer2_ladder_3_0x7fc843b7f6e0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_4_0x7fc843b7fd20_pos" />
+                <rotationref ref="VXD_layer2_ladder_4_0x7fc843b7fd20_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_5_0x7fc843b80360_pos" />
+                <rotationref ref="VXD_layer2_ladder_5_0x7fc843b80360_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_6_0x7fc843b809a0_pos" />
+                <rotationref ref="VXD_layer2_ladder_6_0x7fc843b809a0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_7_0x7fc843b80fe0_pos" />
+                <rotationref ref="VXD_layer2_ladder_7_0x7fc843b80fe0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_8_0x7fc843b81620_pos" />
+                <rotationref ref="VXD_layer2_ladder_8_0x7fc843b81620_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_9_0x7fc843b81c60_pos" />
+                <rotationref ref="VXD_layer2_ladder_9_0x7fc843b81c60_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_10_0x7fc843b822a0_pos" />
+                <rotationref ref="VXD_layer2_ladder_10_0x7fc843b822a0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_11_0x7fc843b828e0_pos" />
+                <rotationref ref="VXD_layer2_ladder_11_0x7fc843b828e0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_12_0x7fc843b82f20_pos" />
+                <rotationref ref="VXD_layer2_ladder_12_0x7fc843b82f20_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_13_0x7fc843b83560_pos" />
+                <rotationref ref="VXD_layer2_ladder_13_0x7fc843b83560_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_14_0x7fc843b83ba0_pos" />
+                <rotationref ref="VXD_layer2_ladder_14_0x7fc843b83ba0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_15_0x7fc843b841e0_pos" />
+                <rotationref ref="VXD_layer2_ladder_15_0x7fc843b841e0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_16_0x7fc843b84820_pos" />
+                <rotationref ref="VXD_layer2_ladder_16_0x7fc843b84820_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_17_0x7fc843b84ee0_pos" />
+                <rotationref ref="VXD_layer2_ladder_17_0x7fc843b84ee0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_18_0x7fc843b85520_pos" />
+                <rotationref ref="VXD_layer2_ladder_18_0x7fc843b85520_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_19_0x7fc843b85b60_pos" />
+                <rotationref ref="VXD_layer2_ladder_19_0x7fc843b85b60_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_20_0x7fc843b861a0_pos" />
+                <rotationref ref="VXD_layer2_ladder_20_0x7fc843b861a0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer2_ladder" />
+                <positionref ref="VXD_layer2_ladder_21_0x7fc843b867e0_pos" />
+                <rotationref ref="VXD_layer2_ladder_21_0x7fc843b867e0_rot" />
+            </physvol>
+        </assembly>
+        <assembly name="layer_assembly_3">
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_0_0x7fc843b88680_pos" />
+                <rotationref ref="VXD_layer3_ladder_0_0x7fc843b88680_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_1_0x7fc843b888c0_pos" />
+                <rotationref ref="VXD_layer3_ladder_1_0x7fc843b888c0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_2_0x7fc843b88e00_pos" />
+                <rotationref ref="VXD_layer3_ladder_2_0x7fc843b88e00_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_3_0x7fc843b89440_pos" />
+                <rotationref ref="VXD_layer3_ladder_3_0x7fc843b89440_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_4_0x7fc843b89a80_pos" />
+                <rotationref ref="VXD_layer3_ladder_4_0x7fc843b89a80_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_5_0x7fc843b8a0c0_pos" />
+                <rotationref ref="VXD_layer3_ladder_5_0x7fc843b8a0c0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_6_0x7fc843b8a700_pos" />
+                <rotationref ref="VXD_layer3_ladder_6_0x7fc843b8a700_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_7_0x7fc843b8ad40_pos" />
+                <rotationref ref="VXD_layer3_ladder_7_0x7fc843b8ad40_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_8_0x7fc843b8b380_pos" />
+                <rotationref ref="VXD_layer3_ladder_8_0x7fc843b8b380_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_9_0x7fc843b8b9c0_pos" />
+                <rotationref ref="VXD_layer3_ladder_9_0x7fc843b8b9c0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_10_0x7fc843b8c000_pos" />
+                <rotationref ref="VXD_layer3_ladder_10_0x7fc843b8c000_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_11_0x7fc843b8c640_pos" />
+                <rotationref ref="VXD_layer3_ladder_11_0x7fc843b8c640_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_12_0x7fc843b8cc80_pos" />
+                <rotationref ref="VXD_layer3_ladder_12_0x7fc843b8cc80_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_13_0x7fc843b8d2c0_pos" />
+                <rotationref ref="VXD_layer3_ladder_13_0x7fc843b8d2c0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_14_0x7fc843b8d900_pos" />
+                <rotationref ref="VXD_layer3_ladder_14_0x7fc843b8d900_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_15_0x7fc843b8df40_pos" />
+                <rotationref ref="VXD_layer3_ladder_15_0x7fc843b8df40_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_16_0x7fc843b8e580_pos" />
+                <rotationref ref="VXD_layer3_ladder_16_0x7fc843b8e580_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_17_0x7fc843b8ec40_pos" />
+                <rotationref ref="VXD_layer3_ladder_17_0x7fc843b8ec40_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_18_0x7fc843b8f280_pos" />
+                <rotationref ref="VXD_layer3_ladder_18_0x7fc843b8f280_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_19_0x7fc843b8f8c0_pos" />
+                <rotationref ref="VXD_layer3_ladder_19_0x7fc843b8f8c0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_20_0x7fc843b8ff00_pos" />
+                <rotationref ref="VXD_layer3_ladder_20_0x7fc843b8ff00_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer3_ladder" />
+                <positionref ref="VXD_layer3_ladder_21_0x7fc843b90540_pos" />
+                <rotationref ref="VXD_layer3_ladder_21_0x7fc843b90540_rot" />
+            </physvol>
+        </assembly>
+        <assembly name="layer_assembly_4">
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_0_0x7fc843b92660_pos" />
+                <rotationref ref="VXD_layer4_ladder_0_0x7fc843b92660_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_1_0x7fc843b92820_pos" />
+                <rotationref ref="VXD_layer4_ladder_1_0x7fc843b92820_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_2_0x7fc843b92d60_pos" />
+                <rotationref ref="VXD_layer4_ladder_2_0x7fc843b92d60_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_3_0x7fc843b933a0_pos" />
+                <rotationref ref="VXD_layer4_ladder_3_0x7fc843b933a0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_4_0x7fc843b939e0_pos" />
+                <rotationref ref="VXD_layer4_ladder_4_0x7fc843b939e0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_5_0x7fc843b94020_pos" />
+                <rotationref ref="VXD_layer4_ladder_5_0x7fc843b94020_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_6_0x7fc843b94660_pos" />
+                <rotationref ref="VXD_layer4_ladder_6_0x7fc843b94660_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_7_0x7fc843b94ca0_pos" />
+                <rotationref ref="VXD_layer4_ladder_7_0x7fc843b94ca0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_8_0x7fc843b952e0_pos" />
+                <rotationref ref="VXD_layer4_ladder_8_0x7fc843b952e0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_9_0x7fc843b95920_pos" />
+                <rotationref ref="VXD_layer4_ladder_9_0x7fc843b95920_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_10_0x7fc843b95f60_pos" />
+                <rotationref ref="VXD_layer4_ladder_10_0x7fc843b95f60_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_11_0x7fc843b965a0_pos" />
+                <rotationref ref="VXD_layer4_ladder_11_0x7fc843b965a0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_12_0x7fc843b96be0_pos" />
+                <rotationref ref="VXD_layer4_ladder_12_0x7fc843b96be0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_13_0x7fc843b97220_pos" />
+                <rotationref ref="VXD_layer4_ladder_13_0x7fc843b97220_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_14_0x7fc843b97860_pos" />
+                <rotationref ref="VXD_layer4_ladder_14_0x7fc843b97860_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_15_0x7fc843b97ea0_pos" />
+                <rotationref ref="VXD_layer4_ladder_15_0x7fc843b97ea0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_16_0x7fc843b984e0_pos" />
+                <rotationref ref="VXD_layer4_ladder_16_0x7fc843b984e0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_17_0x7fc843b98ba0_pos" />
+                <rotationref ref="VXD_layer4_ladder_17_0x7fc843b98ba0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_18_0x7fc843b991e0_pos" />
+                <rotationref ref="VXD_layer4_ladder_18_0x7fc843b991e0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_19_0x7fc843b99820_pos" />
+                <rotationref ref="VXD_layer4_ladder_19_0x7fc843b99820_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_20_0x7fc843b99e60_pos" />
+                <rotationref ref="VXD_layer4_ladder_20_0x7fc843b99e60_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_21_0x7fc843b9a4a0_pos" />
+                <rotationref ref="VXD_layer4_ladder_21_0x7fc843b9a4a0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_22_0x7fc843b9aae0_pos" />
+                <rotationref ref="VXD_layer4_ladder_22_0x7fc843b9aae0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_23_0x7fc843b9b120_pos" />
+                <rotationref ref="VXD_layer4_ladder_23_0x7fc843b9b120_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_24_0x7fc843b9b760_pos" />
+                <rotationref ref="VXD_layer4_ladder_24_0x7fc843b9b760_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_25_0x7fc843b9bda0_pos" />
+                <rotationref ref="VXD_layer4_ladder_25_0x7fc843b9bda0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_26_0x7fc843b9c3e0_pos" />
+                <rotationref ref="VXD_layer4_ladder_26_0x7fc843b9c3e0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_27_0x7fc843b9ca20_pos" />
+                <rotationref ref="VXD_layer4_ladder_27_0x7fc843b9ca20_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_28_0x7fc843b9d060_pos" />
+                <rotationref ref="VXD_layer4_ladder_28_0x7fc843b9d060_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_29_0x7fc843b9d6a0_pos" />
+                <rotationref ref="VXD_layer4_ladder_29_0x7fc843b9d6a0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_30_0x7fc843b9dce0_pos" />
+                <rotationref ref="VXD_layer4_ladder_30_0x7fc843b9dce0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_31_0x7fc843b9e320_pos" />
+                <rotationref ref="VXD_layer4_ladder_31_0x7fc843b9e320_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_32_0x7fc843b9e960_pos" />
+                <rotationref ref="VXD_layer4_ladder_32_0x7fc843b9e960_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer4_ladder" />
+                <positionref ref="VXD_layer4_ladder_33_0x7fc843b9f090_pos" />
+                <rotationref ref="VXD_layer4_ladder_33_0x7fc843b9f090_rot" />
+            </physvol>
+        </assembly>
+        <assembly name="layer_assembly_5">
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_0_0x7fc843ba0eb0_pos" />
+                <rotationref ref="VXD_layer5_ladder_0_0x7fc843ba0eb0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_1_0x7fc843ba10f0_pos" />
+                <rotationref ref="VXD_layer5_ladder_1_0x7fc843ba10f0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_2_0x7fc843ba1630_pos" />
+                <rotationref ref="VXD_layer5_ladder_2_0x7fc843ba1630_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_3_0x7fc843ba1c70_pos" />
+                <rotationref ref="VXD_layer5_ladder_3_0x7fc843ba1c70_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_4_0x7fc843ba22b0_pos" />
+                <rotationref ref="VXD_layer5_ladder_4_0x7fc843ba22b0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_5_0x7fc843ba28f0_pos" />
+                <rotationref ref="VXD_layer5_ladder_5_0x7fc843ba28f0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_6_0x7fc843ba2f30_pos" />
+                <rotationref ref="VXD_layer5_ladder_6_0x7fc843ba2f30_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_7_0x7fc843ba3570_pos" />
+                <rotationref ref="VXD_layer5_ladder_7_0x7fc843ba3570_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_8_0x7fc843ba3bb0_pos" />
+                <rotationref ref="VXD_layer5_ladder_8_0x7fc843ba3bb0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_9_0x7fc843ba41f0_pos" />
+                <rotationref ref="VXD_layer5_ladder_9_0x7fc843ba41f0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_10_0x7fc843ba4830_pos" />
+                <rotationref ref="VXD_layer5_ladder_10_0x7fc843ba4830_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_11_0x7fc843ba4e70_pos" />
+                <rotationref ref="VXD_layer5_ladder_11_0x7fc843ba4e70_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_12_0x7fc843ba54b0_pos" />
+                <rotationref ref="VXD_layer5_ladder_12_0x7fc843ba54b0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_13_0x7fc843ba5af0_pos" />
+                <rotationref ref="VXD_layer5_ladder_13_0x7fc843ba5af0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_14_0x7fc843ba6130_pos" />
+                <rotationref ref="VXD_layer5_ladder_14_0x7fc843ba6130_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_15_0x7fc843ba6770_pos" />
+                <rotationref ref="VXD_layer5_ladder_15_0x7fc843ba6770_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_16_0x7fc843ba6db0_pos" />
+                <rotationref ref="VXD_layer5_ladder_16_0x7fc843ba6db0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_17_0x7fc843ba7470_pos" />
+                <rotationref ref="VXD_layer5_ladder_17_0x7fc843ba7470_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_18_0x7fc843ba7ab0_pos" />
+                <rotationref ref="VXD_layer5_ladder_18_0x7fc843ba7ab0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_19_0x7fc843ba80f0_pos" />
+                <rotationref ref="VXD_layer5_ladder_19_0x7fc843ba80f0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_20_0x7fc843ba8730_pos" />
+                <rotationref ref="VXD_layer5_ladder_20_0x7fc843ba8730_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_21_0x7fc843ba8d70_pos" />
+                <rotationref ref="VXD_layer5_ladder_21_0x7fc843ba8d70_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_22_0x7fc843ba93b0_pos" />
+                <rotationref ref="VXD_layer5_ladder_22_0x7fc843ba93b0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_23_0x7fc843ba99f0_pos" />
+                <rotationref ref="VXD_layer5_ladder_23_0x7fc843ba99f0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_24_0x7fc843baa030_pos" />
+                <rotationref ref="VXD_layer5_ladder_24_0x7fc843baa030_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_25_0x7fc843baa670_pos" />
+                <rotationref ref="VXD_layer5_ladder_25_0x7fc843baa670_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_26_0x7fc843baacb0_pos" />
+                <rotationref ref="VXD_layer5_ladder_26_0x7fc843baacb0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_27_0x7fc843bab2f0_pos" />
+                <rotationref ref="VXD_layer5_ladder_27_0x7fc843bab2f0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_28_0x7fc843bab930_pos" />
+                <rotationref ref="VXD_layer5_ladder_28_0x7fc843bab930_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_29_0x7fc843babf70_pos" />
+                <rotationref ref="VXD_layer5_ladder_29_0x7fc843babf70_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_30_0x7fc843bac5b0_pos" />
+                <rotationref ref="VXD_layer5_ladder_30_0x7fc843bac5b0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_31_0x7fc843bacbf0_pos" />
+                <rotationref ref="VXD_layer5_ladder_31_0x7fc843bacbf0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_32_0x7fc843bad230_pos" />
+                <rotationref ref="VXD_layer5_ladder_32_0x7fc843bad230_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="VXD_layer5_ladder" />
+                <positionref ref="VXD_layer5_ladder_33_0x7fc843bad960_pos" />
+                <rotationref ref="VXD_layer5_ladder_33_0x7fc843bad960_rot" />
+            </physvol>
+        </assembly>
+        <assembly name="VXD_assembly">
+            <physvol>
+                <volumeref ref="layer_assembly_0" />
+                <positionref ref="identity_pos" />
+            </physvol>
+            <physvol>
+                <volumeref ref="layer_assembly_1" />
+                <positionref ref="identity_pos" />
+            </physvol>
+            <physvol>
+                <volumeref ref="layer_assembly_2" />
+                <positionref ref="identity_pos" />
+            </physvol>
+            <physvol>
+                <volumeref ref="layer_assembly_3" />
+                <positionref ref="identity_pos" />
+            </physvol>
+            <physvol>
+                <volumeref ref="layer_assembly_4" />
+                <positionref ref="identity_pos" />
+            </physvol>
+            <physvol>
+                <volumeref ref="layer_assembly_5" />
+                <positionref ref="identity_pos" />
+            </physvol>
+        </assembly>
+    </structure>
+    <setup name="Default" version="1.0">
+        <world ref="VXD_assembly" />
+    </setup>
+</gdml>

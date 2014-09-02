@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gdml xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+    <!--
+      +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      ++++   Linear collider detector description GDML in C++  ++++
+      ++++   DD4hep Detector description generator.            ++++
+      ++++                                                     ++++
+      ++++   Parser: TinyXML DOM mini-parser                   ++++
+      ++++                                                     ++++
+      ++++                              M.Frank CERN/LHCb      ++++
+      +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  -->
+    <define>
+        <position name="SIT_layer0_sens_0_0x7fc843bafc50_pos" x="0.500000" y="0.000000" z="0.000000" unit="mm" />
+        <position name="SIT_layer0_supp_1_0x7fc843bafe20_pos" x="-0.050000" y="0.000000" z="0.000000" unit="mm" />
+        <position name="SIT_layer1_sens_0_0x7fc843bb4a70_pos" x="0.500000" y="0.000000" z="0.000000" unit="mm" />
+        <position name="SIT_layer1_supp_1_0x7fc843bb4c40_pos" x="-0.050000" y="0.000000" z="0.000000" unit="mm" />
+        <position name="SIT_layer0_ladder_0_0x7fc843bb0070_pos" x="155.500000" y="0.000000" z="0.000000" unit="mm" />
+        <rotation name="identity_rot" x="0" y="0" z="0" unit="rad" />
+        <position name="SIT_layer0_ladder_1_0x7fc843bb0210_pos" x="125.802143" y="91.400607" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer0_ladder_1_0x7fc843bb0210_rot" x="0.000000" y="-0.000000" z="-0.628319" unit="rad" />
+        <position name="SIT_layer0_ladder_2_0x7fc843bb0810_pos" x="48.052143" y="147.889288" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer0_ladder_2_0x7fc843bb0810_rot" x="0.000000" y="-0.000000" z="-1.256637" unit="rad" />
+        <position name="SIT_layer0_ladder_3_0x7fc843bb0e00_pos" x="-48.052143" y="147.889288" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer0_ladder_3_0x7fc843bb0e00_rot" x="0.000000" y="-0.000000" z="-1.884956" unit="rad" />
+        <position name="SIT_layer0_ladder_4_0x7fc843bb13f0_pos" x="-125.802143" y="91.400607" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer0_ladder_4_0x7fc843bb13f0_rot" x="0.000000" y="-0.000000" z="-2.513274" unit="rad" />
+        <position name="SIT_layer0_ladder_5_0x7fc843bb19e0_pos" x="-155.500000" y="0.000000" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer0_ladder_5_0x7fc843bb19e0_rot" x="0.000000" y="-0.000000" z="-3.141593" unit="rad" />
+        <position name="SIT_layer0_ladder_6_0x7fc843bb1fd0_pos" x="-125.802143" y="-91.400607" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer0_ladder_6_0x7fc843bb1fd0_rot" x="-0.000000" y="-0.000000" z="2.513274" unit="rad" />
+        <position name="SIT_layer0_ladder_7_0x7fc843bb25c0_pos" x="-48.052143" y="-147.889288" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer0_ladder_7_0x7fc843bb25c0_rot" x="-0.000000" y="-0.000000" z="1.884956" unit="rad" />
+        <position name="SIT_layer0_ladder_8_0x7fc843bb2bb0_pos" x="48.052143" y="-147.889288" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer0_ladder_8_0x7fc843bb2bb0_rot" x="0.000000" y="-0.000000" z="1.256637" unit="rad" />
+        <position name="SIT_layer0_ladder_9_0x7fc843bb31a0_pos" x="125.802143" y="-91.400607" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer0_ladder_9_0x7fc843bb31a0_rot" x="0.000000" y="-0.000000" z="0.628319" unit="rad" />
+        <position name="SIT_layer1_ladder_0_0x7fc843bb4e90_pos" x="300.500000" y="0.000000" z="0.000000" unit="mm" />
+        <position name="SIT_layer1_ladder_1_0x7fc843bb5030_pos" x="284.218081" y="97.572190" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer1_ladder_1_0x7fc843bb5030_rot" x="0.000000" y="-0.000000" z="-0.330694" unit="rad" />
+        <position name="SIT_layer1_ladder_2_0x7fc843bb5630_pos" x="237.136723" y="184.570920" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer1_ladder_2_0x7fc843bb5630_rot" x="0.000000" y="-0.000000" z="-0.661388" unit="rad" />
+        <position name="SIT_layer1_ladder_3_0x7fc843bb5c20_pos" x="164.357922" y="251.568527" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer1_ladder_3_0x7fc843bb5c20_rot" x="0.000000" y="-0.000000" z="-0.992082" unit="rad" />
+        <position name="SIT_layer1_ladder_4_0x7fc843bb6210_pos" x="73.768389" y="291.304780" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer1_ladder_4_0x7fc843bb6210_rot" x="0.000000" y="-0.000000" z="-1.322776" unit="rad" />
+        <position name="SIT_layer1_ladder_5_0x7fc843bb6800_pos" x="-24.815093" y="299.473640" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer1_ladder_5_0x7fc843bb6800_rot" x="0.000000" y="-0.000000" z="-1.653470" unit="rad" />
+        <position name="SIT_layer1_ladder_6_0x7fc843bb6df0_pos" x="-120.709475" y="275.189885" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer1_ladder_6_0x7fc843bb6df0_rot" x="0.000000" y="-0.000000" z="-1.984164" unit="rad" />
+        <position name="SIT_layer1_ladder_7_0x7fc843bb73e0_pos" x="-203.523112" y="221.085035" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer1_ladder_7_0x7fc843bb73e0_rot" x="0.000000" y="-0.000000" z="-2.314858" unit="rad" />
+        <position name="SIT_layer1_ladder_8_0x7fc843bb79d0_pos" x="-264.281862" y="143.022192" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer1_ladder_8_0x7fc843bb79d0_rot" x="0.000000" y="-0.000000" z="-2.645552" unit="rad" />
+        <position name="SIT_layer1_ladder_9_0x7fc843bb7fc0_pos" x="-296.401572" y="49.460674" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer1_ladder_9_0x7fc843bb7fc0_rot" x="0.000000" y="-0.000000" z="-2.976246" unit="rad" />
+        <position name="SIT_layer1_ladder_10_0x7fc843bb85b0_pos" x="-296.401572" y="-49.460674" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer1_ladder_10_0x7fc843bb85b0_rot" x="-0.000000" y="-0.000000" z="2.976246" unit="rad" />
+        <position name="SIT_layer1_ladder_11_0x7fc843bb8ba0_pos" x="-264.281862" y="-143.022192" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer1_ladder_11_0x7fc843bb8ba0_rot" x="-0.000000" y="-0.000000" z="2.645552" unit="rad" />
+        <position name="SIT_layer1_ladder_12_0x7fc843bb9190_pos" x="-203.523112" y="-221.085035" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer1_ladder_12_0x7fc843bb9190_rot" x="-0.000000" y="-0.000000" z="2.314858" unit="rad" />
+        <position name="SIT_layer1_ladder_13_0x7fc843bb9780_pos" x="-120.709475" y="-275.189885" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer1_ladder_13_0x7fc843bb9780_rot" x="-0.000000" y="-0.000000" z="1.984164" unit="rad" />
+        <position name="SIT_layer1_ladder_14_0x7fc843bb9d70_pos" x="-24.815093" y="-299.473640" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer1_ladder_14_0x7fc843bb9d70_rot" x="-0.000000" y="-0.000000" z="1.653470" unit="rad" />
+        <position name="SIT_layer1_ladder_15_0x7fc843bba360_pos" x="73.768389" y="-291.304780" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer1_ladder_15_0x7fc843bba360_rot" x="0.000000" y="-0.000000" z="1.322776" unit="rad" />
+        <position name="SIT_layer1_ladder_16_0x7fc843bba950_pos" x="164.357922" y="-251.568527" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer1_ladder_16_0x7fc843bba950_rot" x="0.000000" y="-0.000000" z="0.992082" unit="rad" />
+        <position name="SIT_layer1_ladder_17_0x7fc843bbafd0_pos" x="237.136723" y="-184.570920" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer1_ladder_17_0x7fc843bbafd0_rot" x="0.000000" y="-0.000000" z="0.661388" unit="rad" />
+        <position name="SIT_layer1_ladder_18_0x7fc843bbb5a0_pos" x="284.218081" y="-97.572190" z="0.000000" unit="mm" />
+        <rotation name="SIT_layer1_ladder_18_0x7fc843bbb5a0_rot" x="0.000000" y="-0.000000" z="0.330694" unit="rad" />
+        <position name="identity_pos" x="0" y="0" z="0" unit="mm" />
+    </define>
+    <materials>
+        <material name="dummy" Z="0.000000">
+            <D value="0.000000" unit="g/cm3" type="density" />
+            <atom type="A" unit="g/mol" value="0.000000" />
+        </material>
+        <element name="SI" formula="SI" Z="14">
+            <atom type="A" unit="g/mol" value="28.085500" />
+        </element>
+        <material name="Silicon">
+            <D value="2.330000" unit="g/cm3" type="density" />
+            <fraction n="1.000000" ref="SI" />
+        </material>
+        <element name="C" formula="C" Z="6">
+            <atom type="A" unit="g/mol" value="12.010700" />
+        </element>
+        <material name="Carbon">
+            <D value="2.000000" unit="g/cm3" type="density" />
+            <fraction n="1.000000" ref="C" />
+        </material>
+    </materials>
+    <solids>
+        <box name="SIT_layer0_ladder_shape" x="1.100000" y="100.692614" z="740.000000" lunit="mm" />
+        <box name="SIT_layer0_sens_shape" x="0.100000" y="100.692614" z="740.000000" lunit="mm" />
+        <box name="SIT_layer0_supp_shape" x="1.000000" y="100.692614" z="740.000000" lunit="mm" />
+        <box name="SIT_layer1_ladder_shape" x="1.100000" y="100.105605" z="1300.000000" lunit="mm" />
+        <box name="SIT_layer1_sens_shape" x="0.100000" y="100.105605" z="1300.000000" lunit="mm" />
+        <box name="SIT_layer1_supp_shape" x="1.000000" y="100.105605" z="1300.000000" lunit="mm" />
+    </solids>
+    <structure>
+        <volume name="SIT_layer0_sens">
+            <materialref ref="Silicon" />
+            <solidref ref="SIT_layer0_sens_shape" />
+        </volume>
+        <volume name="SIT_layer0_supp">
+            <materialref ref="Carbon" />
+            <solidref ref="SIT_layer0_supp_shape" />
+        </volume>
+        <volume name="SIT_layer1_sens">
+            <materialref ref="Silicon" />
+            <solidref ref="SIT_layer1_sens_shape" />
+        </volume>
+        <volume name="SIT_layer1_supp">
+            <materialref ref="Carbon" />
+            <solidref ref="SIT_layer1_supp_shape" />
+        </volume>
+        <volume name="SIT_layer0_ladder">
+            <materialref ref="Carbon" />
+            <solidref ref="SIT_layer0_ladder_shape" />
+            <physvol>
+                <volumeref ref="SIT_layer0_sens" />
+                <positionref ref="SIT_layer0_sens_0_0x7fc843bafc50_pos" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer0_supp" />
+                <positionref ref="SIT_layer0_supp_1_0x7fc843bafe20_pos" />
+            </physvol>
+        </volume>
+        <volume name="SIT_layer1_ladder">
+            <materialref ref="Carbon" />
+            <solidref ref="SIT_layer1_ladder_shape" />
+            <physvol>
+                <volumeref ref="SIT_layer1_sens" />
+                <positionref ref="SIT_layer1_sens_0_0x7fc843bb4a70_pos" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1_supp" />
+                <positionref ref="SIT_layer1_supp_1_0x7fc843bb4c40_pos" />
+            </physvol>
+        </volume>
+        <assembly name="SIT_layer0">
+            <physvol>
+                <volumeref ref="SIT_layer0_ladder" />
+                <positionref ref="SIT_layer0_ladder_0_0x7fc843bb0070_pos" />
+                <rotationref ref="identity_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer0_ladder" />
+                <positionref ref="SIT_layer0_ladder_1_0x7fc843bb0210_pos" />
+                <rotationref ref="SIT_layer0_ladder_1_0x7fc843bb0210_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer0_ladder" />
+                <positionref ref="SIT_layer0_ladder_2_0x7fc843bb0810_pos" />
+                <rotationref ref="SIT_layer0_ladder_2_0x7fc843bb0810_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer0_ladder" />
+                <positionref ref="SIT_layer0_ladder_3_0x7fc843bb0e00_pos" />
+                <rotationref ref="SIT_layer0_ladder_3_0x7fc843bb0e00_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer0_ladder" />
+                <positionref ref="SIT_layer0_ladder_4_0x7fc843bb13f0_pos" />
+                <rotationref ref="SIT_layer0_ladder_4_0x7fc843bb13f0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer0_ladder" />
+                <positionref ref="SIT_layer0_ladder_5_0x7fc843bb19e0_pos" />
+                <rotationref ref="SIT_layer0_ladder_5_0x7fc843bb19e0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer0_ladder" />
+                <positionref ref="SIT_layer0_ladder_6_0x7fc843bb1fd0_pos" />
+                <rotationref ref="SIT_layer0_ladder_6_0x7fc843bb1fd0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer0_ladder" />
+                <positionref ref="SIT_layer0_ladder_7_0x7fc843bb25c0_pos" />
+                <rotationref ref="SIT_layer0_ladder_7_0x7fc843bb25c0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer0_ladder" />
+                <positionref ref="SIT_layer0_ladder_8_0x7fc843bb2bb0_pos" />
+                <rotationref ref="SIT_layer0_ladder_8_0x7fc843bb2bb0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer0_ladder" />
+                <positionref ref="SIT_layer0_ladder_9_0x7fc843bb31a0_pos" />
+                <rotationref ref="SIT_layer0_ladder_9_0x7fc843bb31a0_rot" />
+            </physvol>
+        </assembly>
+        <assembly name="SIT_layer1">
+            <physvol>
+                <volumeref ref="SIT_layer1_ladder" />
+                <positionref ref="SIT_layer1_ladder_0_0x7fc843bb4e90_pos" />
+                <rotationref ref="identity_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1_ladder" />
+                <positionref ref="SIT_layer1_ladder_1_0x7fc843bb5030_pos" />
+                <rotationref ref="SIT_layer1_ladder_1_0x7fc843bb5030_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1_ladder" />
+                <positionref ref="SIT_layer1_ladder_2_0x7fc843bb5630_pos" />
+                <rotationref ref="SIT_layer1_ladder_2_0x7fc843bb5630_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1_ladder" />
+                <positionref ref="SIT_layer1_ladder_3_0x7fc843bb5c20_pos" />
+                <rotationref ref="SIT_layer1_ladder_3_0x7fc843bb5c20_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1_ladder" />
+                <positionref ref="SIT_layer1_ladder_4_0x7fc843bb6210_pos" />
+                <rotationref ref="SIT_layer1_ladder_4_0x7fc843bb6210_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1_ladder" />
+                <positionref ref="SIT_layer1_ladder_5_0x7fc843bb6800_pos" />
+                <rotationref ref="SIT_layer1_ladder_5_0x7fc843bb6800_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1_ladder" />
+                <positionref ref="SIT_layer1_ladder_6_0x7fc843bb6df0_pos" />
+                <rotationref ref="SIT_layer1_ladder_6_0x7fc843bb6df0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1_ladder" />
+                <positionref ref="SIT_layer1_ladder_7_0x7fc843bb73e0_pos" />
+                <rotationref ref="SIT_layer1_ladder_7_0x7fc843bb73e0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1_ladder" />
+                <positionref ref="SIT_layer1_ladder_8_0x7fc843bb79d0_pos" />
+                <rotationref ref="SIT_layer1_ladder_8_0x7fc843bb79d0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1_ladder" />
+                <positionref ref="SIT_layer1_ladder_9_0x7fc843bb7fc0_pos" />
+                <rotationref ref="SIT_layer1_ladder_9_0x7fc843bb7fc0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1_ladder" />
+                <positionref ref="SIT_layer1_ladder_10_0x7fc843bb85b0_pos" />
+                <rotationref ref="SIT_layer1_ladder_10_0x7fc843bb85b0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1_ladder" />
+                <positionref ref="SIT_layer1_ladder_11_0x7fc843bb8ba0_pos" />
+                <rotationref ref="SIT_layer1_ladder_11_0x7fc843bb8ba0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1_ladder" />
+                <positionref ref="SIT_layer1_ladder_12_0x7fc843bb9190_pos" />
+                <rotationref ref="SIT_layer1_ladder_12_0x7fc843bb9190_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1_ladder" />
+                <positionref ref="SIT_layer1_ladder_13_0x7fc843bb9780_pos" />
+                <rotationref ref="SIT_layer1_ladder_13_0x7fc843bb9780_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1_ladder" />
+                <positionref ref="SIT_layer1_ladder_14_0x7fc843bb9d70_pos" />
+                <rotationref ref="SIT_layer1_ladder_14_0x7fc843bb9d70_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1_ladder" />
+                <positionref ref="SIT_layer1_ladder_15_0x7fc843bba360_pos" />
+                <rotationref ref="SIT_layer1_ladder_15_0x7fc843bba360_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1_ladder" />
+                <positionref ref="SIT_layer1_ladder_16_0x7fc843bba950_pos" />
+                <rotationref ref="SIT_layer1_ladder_16_0x7fc843bba950_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1_ladder" />
+                <positionref ref="SIT_layer1_ladder_17_0x7fc843bbafd0_pos" />
+                <rotationref ref="SIT_layer1_ladder_17_0x7fc843bbafd0_rot" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1_ladder" />
+                <positionref ref="SIT_layer1_ladder_18_0x7fc843bbb5a0_pos" />
+                <rotationref ref="SIT_layer1_ladder_18_0x7fc843bbb5a0_rot" />
+            </physvol>
+        </assembly>
+        <assembly name="SIT_assembly">
+            <physvol>
+                <volumeref ref="SIT_layer0" />
+                <positionref ref="identity_pos" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SIT_layer1" />
+                <positionref ref="identity_pos" />
+            </physvol>
+        </assembly>
+    </structure>
+    <setup name="Default" version="1.0">
+        <world ref="SIT_assembly" />
+    </setup>
+</gdml>
