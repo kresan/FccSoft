@@ -82,4 +82,4 @@ This is an implementation of a software framework for the ILD experiment which i
     // Click on "FairEventManager" (in the top-left pane)
     // Click on the "Info" tab (on top of the bottom-left pane)
     // Increase the "Current Event" to >0 to see the events
-    Use quit() or Ctrl-D (i.e. EOF) to exit
+    Use .q to exit
