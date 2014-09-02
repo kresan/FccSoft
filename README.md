@@ -56,12 +56,6 @@ This is an implementation of a software framework for the ILD experiment which i
     make install
     ```
 
-    To run the tests do:
-
-    ```bash
-    cd ~/FairRoot/build
-    make test
-    ```
 
 4. Install the [FccSoft](https://github.com/kresan/FccSoft.git) software:
 
