@@ -16,7 +16,6 @@ This is an implementation of a software framework for the ILD experiment which i
     ```bash
     export SIMPATH=~/FairSoft/FairSoftInst
     export FAIRROOTPATH=~/FairRoot/FairRootInst
-    export FCCSOFT=~/FccSoft/build
     ```
 
     or for the csh:
@@ -24,7 +23,6 @@ This is an implementation of a software framework for the ILD experiment which i
     ```bash
     setenv SIMPATH ~/FairSoft/FairSoftInst
     setenv FAIRROOTPATH ~/FairRoot/FairRootInst
-    setenv FCCSOFT ~/FccSoft/build
     ```
 
 
