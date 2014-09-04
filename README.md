@@ -47,7 +47,7 @@ This is an implementation of a software framework for the ILD experiment which i
 
     ```bash
     cd ~
-    git clone -b dev https://github.com/ShipSoft/FairRoot.git
+    git clone -b dev https://github.com/FairRootGroup/FairRoot.git
     cd FairRoot
     mkdir build
     cd build
